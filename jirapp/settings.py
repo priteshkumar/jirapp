@@ -25,7 +25,7 @@ SECRET_KEY = 'ow2(jsug97z4735l&q$29j(-qi2s2gyz86pc&v12-w5^ydj7_o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'jira',
         'USER': 'djangoadmin',
         'PASSWORD': 'Kaspermaven12',
-        'HOST': '127.0.0.1',
+        'HOST': 'db',
         'PORT': '3306',
     }
 }
