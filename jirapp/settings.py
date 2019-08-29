@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'jirapp.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jira',
-        'USER': 'djangoadmin',
-        'PASSWORD': 'Kaspermaven12',
-        'HOST': 'db',
-        'PORT': '3306',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'jira',
+#        'USER': 'djangoadmin',
+#        'PASSWORD': 'Kaspermaven12',
+#        'HOST': 'db',
+#        'PORT': '3306',
+#    }
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
