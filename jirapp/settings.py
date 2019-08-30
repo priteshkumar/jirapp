@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'jira',
-        'USER': 'djangoadmin',
-        'PASSWORD': 'Kaspermaven12',
+        'USER': 'root',
+        'PASSWORD': 'gstreamer',
         'HOST': 'db',
         'PORT': '3306',
     }

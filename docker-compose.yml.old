@@ -2,18 +2,13 @@ version: '3'
 
 services:
   db:
-    image: mysql:5.7
-    environment:
-     - MYSQL_ROOT_PASSWORD=gstreamer
-     - MYSQL_DATABASE=jira
-     - MYSQL_USER=jiradmin
-     - MYSQL_PASSWORD=casper347
+    image: mavpks/mysql-server:8.0
   web:
     build: .
     command: ["/bin/bash", "-c","sleep 15 && python manage.py migrate && python manage.py runserver 0.0.0.0:8080"]
     volumes:
       - .:/usr/src/app
     ports:
-      - "3000:8080"
+      - "8080:8080"
     depends_on:
       - db
